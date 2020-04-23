@@ -1,0 +1,33 @@
+.dieFace {
+	background-color: white;
+	-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+	backface-visibility: hidden;
+	border: 3px solid black;
+	height: 50px;
+	position: absolute;
+	width: 50px;
+}
+.top {
+	background: yellow;
+	transform: rotateX(90deg) translateZ(25px);
+}
+.front {
+	background: orange;
+	transform: translateZ(25px);
+}
+.right {
+	background: red;
+	transform: rotateY(90deg) translateZ(25px);
+}
+.back {
+	background: aqua;
+	transform: rotateY(180deg) translateZ(25px);
+}
+.left {
+	background: lime;
+	transform: rotateY(-90deg) translateZ(25px);
+}
+.bottom {
+	background: pink;
+	transform: rotateX(-90deg) translateZ(25px);
+}

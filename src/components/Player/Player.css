@@ -1,0 +1,59 @@
+.playerMat {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  border-radius: 3px;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+.playerMat.currentPlayer {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.currentPlayer {
+  -webkit-animation-name: flash;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;    
+  animation-name: flash;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+.name {
+  color: #fff;
+  margin-bottom: 2%;
+  text-shadow: 1px 1px 1px grey;
+}
+.strategy {
+  color: white;
+  font-size: 1rem;
+  font-variant: small-caps;
+  text-transform: uppercase;
+}
+.coin, .card {
+  display: inline-block;
+}
+.card img {
+  width: 100%;
+}
+.cardStackContainer {
+  margin-bottom: 1%;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    background-color: #ffffd3;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+@keyframes flash {
+  0% {
+    background-color: #ffffd3;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}

@@ -1,0 +1,44 @@
+.app {
+  font-family: roboto;
+}
+.bg {
+  background-color: grey;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -10;
+}
+.fullHeight {
+  height: 100%;
+}
+.verticalCenterChildren {
+  align-items: center;
+  display: flex;
+}
+.machiKoroTitle {
+  left: 2%;
+  opacity: 0.05;      
+  position: absolute;
+  top: 5%;
+}
+.log {
+  background-color: white;
+  list-style-type: none;
+  max-height: 50%;
+  opacity: 0.8;
+  overflow-y: scroll;
+  padding: 2%;        
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.settingsContainer {
+  bottom: 0;
+  position: fixed;
+}

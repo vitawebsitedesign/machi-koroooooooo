@@ -1,0 +1,69 @@
+.coin {
+  align-items: center;
+
+  -webkit-animation-name: animateIn;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;    
+  animation-name: animateIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+
+  border-radius: 50%;
+  box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.23);
+  color: white;
+  display: flex;
+  font-size: 2.2rem;
+  justify-content: center;
+  margin: 2px 0 2px 6px;
+  padding: 3px;  
+}
+.coin.one {
+  background: #bf6e4e; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #bf6e4e 0%, #8c3310 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #bf6e4e 0%,#8c3310 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #bf6e4e 0%,#8c3310 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf6e4e', endColorstr='#8c3310',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  border: 3px solid #ffffff;  
+  height: 40px;
+  width: 40px;
+}
+.coin.five {
+  background: #8D8D8D;
+  border: 10px solid #C8CEC4;  
+  height: 40px;
+  width: 40px;
+}
+.coin.ten {
+  background: #C98537;
+  border: 10px solid #D5B551;  
+  height: 40px;
+  width: 40px;
+}
+
+@-webkit-keyframes animateIn {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+    transform: rotate(40deg);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: none;
+    transform: rotate(0deg);
+  }
+}
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+    transform: rotate(40deg);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: none;
+    transform: rotate(0deg);
+  }
+}

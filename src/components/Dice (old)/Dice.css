@@ -1,0 +1,14 @@
+.dice {
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;  
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0px 3px #e8e8e8;
+  display: inline-block;
+  height: 20px;    
+  padding: 20px;
+  vertical-align: middle;
+  width: 20px;
+}

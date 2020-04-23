@@ -1,0 +1,3 @@
+# ESLint ignores node_modules/ by default
+
+dist/*

@@ -1,0 +1,337 @@
+[
+  {
+    "type": "landmark",
+    "activation": [],
+    "category": "landmark",
+    "name": "station",
+    "img": "station-unconstructed.png",
+    "imgConstructed": "station-constructed.png",
+    "constructed": false,
+    "description": "roll 2 dice",
+    "price": 4,
+    "initialStock": 4,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 1,
+        "aspect": "dice"
+      }
+    ]
+  },
+  {
+    "type": "landmark",
+    "activation": [],
+    "category": "landmark",
+    "name": "shopping mall",
+    "img": "shopping-mall-unconstructed.png",
+    "imgConstructed": "shopping-mall-constructed.png",
+    "constructed": false,
+    "description": "earn +1 coin from your own {restaurant} and {cooking} establishments",
+    "price": 10,
+    "initialStock": 4,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 1,
+        "aspect": "coinForEach",
+        "forEachCategories": ["restaurant", "cooking"]
+      }
+    ]
+  },
+  {
+    "type": "landmark",
+    "activation": [],
+    "category": "landmark",
+    "name": "amusement park",
+    "img": "amusement-park-unconstructed.png",
+    "imgConstructed": "amusement-park-constructed.png",
+    "constructed": false,
+    "description": "if you roll matching dice, take another turn after this one",
+    "price": 16,
+    "initialStock": 4,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 1,
+        "aspect": "extraTurnIfMatchingDice"
+      }
+    ]
+  },
+  {
+    "type": "landmark",
+    "activation": [],
+    "category": "landmark",
+    "name": "radio tower",
+    "img": "radio-tower-unconstructed.png",
+    "imgConstructed": "radio-tower-constructed.png",
+    "constructed": false,
+    "description": "once every turn, you can choose to re-roll your dice",
+    "price": 22,
+    "initialStock": 4,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 1,
+        "aspect": "allowReroll"
+      }
+    ]
+  },
+  {
+    "type": "primaryIndustry",
+    "activation": [1],
+    "category": "food",
+    "name": "wheat field",
+    "img": "wheat-field.png",
+    "description": "get 1 coin from the bank, on anyone's turn",
+    "price": 1,
+    "initialStock": 6,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 1,
+        "aspect": "coin"
+      }
+    ]  
+  },
+  {
+    "type": "primaryIndustry",
+    "activation": [2],
+    "category": "meat",
+    "name": "ranch",
+    "img": "ranch.png",
+    "description": "get 1 coin from the bank, on anyone's turn",
+    "price": 1,
+    "initialStock": 6,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 1,
+        "aspect": "coin"
+      }
+    ]  
+  },
+  {
+    "type": "primaryIndustry",
+    "activation": [5],
+    "category": "machinery",
+    "name": "forest",
+    "img": "forest.png",
+    "description": "get 1 coin from the bank, on anyone's turn",
+    "price": 3,
+    "initialStock": 6,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 1,
+        "aspect": "coin"
+      }
+    ]  
+  },
+  {
+    "type": "primaryIndustry",
+    "activation": [9],
+    "category": "machinery",
+    "name": "mine",
+    "img": "mine.png",
+    "description": "get 5 coins from the bank, on anyone's turn",
+    "price": 6,
+    "initialStock": 6,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 5,
+        "aspect": "coin"
+      }
+    ]
+  },
+  {
+    "type": "primaryIndustry",
+    "activation": [10],
+    "category": "food",
+    "name": "apple orchard",
+    "img": "apple-orchard.png",
+    "description": "get 3 coins from the bank, on anyone's turn",
+    "price": 3,
+    "initialStock": 6,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 3,
+        "aspect": "coin"
+      }
+    ]
+  },
+  {
+    "type": "secondaryIndustry",
+    "activation": [2, 3],
+    "category": "cooking",
+    "name": "bakery",
+    "img": "bakery.png",
+    "description": "get 1 coin from the bank, on your turn only",
+    "price": 1,
+    "initialStock": 6,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 1,
+        "aspect": "coin"
+      }
+    ]
+  },
+  {
+    "type": "secondaryIndustry",
+    "activation": [4],
+    "category": "cooking",
+    "name": "convenience store",
+    "img": "convenience-store.png",
+    "description": "get 3 coins from the bank, on your turn only",
+    "price": 2,
+    "initialStock": 6,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 3,
+        "aspect": "coin"
+      }
+    ]
+  },
+  {
+    "type": "secondaryIndustry",
+    "activation": [7],
+    "category": "manufacturing",
+    "name": "cheese factory",
+    "img": "cheese-factory.png",
+    "description": "if this is your turn, get 3 coins from the bank for each {meat} establishment that you own",
+    "price": 5,
+    "initialStock": 6,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 3,
+        "aspect": "coinForEach",
+        "forEachCategories": ["meat"]
+      }
+    ]
+  },
+  {
+    "type": "secondaryIndustry",
+    "activation": [8],
+    "category": "manufacturing",
+    "name": "furniture factory",
+    "img": "furniture-factory.png",
+    "description": "if this is your turn, get 3 coins from the bank for each {machinery} establishment that you own",
+    "price": 3,
+    "initialStock": 6,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 3,
+        "aspect": "coinForEach",
+        "forEachCategories": ["machinery"]
+      }
+    ]
+  },
+  {
+    "type": "secondaryIndustry",
+    "activation": [11, 12],
+    "category": "fruit",
+    "name": "fruit and vegetable market",
+    "img": "fruit-and-vegetable-market.png",
+    "description": "if this is your turn, get 2 coins from the bank for each {food} establishment that you own",
+    "price": 2,
+    "initialStock": 6,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 2,
+        "aspect": "coinForEach",
+        "forEachCategories": ["food"]
+      }
+    ]
+  },
+  {
+    "type": "restaurants",
+    "activation": [3],
+    "category": "restaurant",
+    "name": "cafe",
+    "img": "cafe.png",
+    "description": "get 1 coin from the player who rolled the dice",
+    "price": 2,
+    "initialStock": 6,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 1,
+        "aspect": "takeCoinFromRoller"
+      }
+    ]
+  },
+  {
+    "type": "restaurants",
+    "activation": [9, 10],
+    "category": "restaurant",
+    "name": "family restaurant",
+    "img": "family-restaurant.png",
+    "description": "get 2 coins from the player who rolled the dice",
+    "price": 3,
+    "initialStock": 6,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 2,
+        "aspect": "takeCoinFromRoller"
+      }
+    ]
+  },
+  {
+    "type": "majorEstablishment",
+    "activation": [6],
+    "category": "majorEstablishment",
+    "name": "stadium",
+    "img": "stadium.png",
+    "description": "get 2 coins from all players, on your turn only",
+    "price": 6,
+    "initialStock": 4,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 2,
+        "aspect": "takeCoinFromAllPlayers"
+      }
+    ]
+  },
+  {
+    "type": "majorEstablishment",
+    "activation": [6],
+    "category": "majorEstablishment",
+    "name": "tv station",
+    "img": "tv-station.png",
+    "description": "if this is your turn, take 5 coins from any one player",
+    "price": 7,
+    "initialStock": 4,
+    "effects": [
+      {
+        "operation": "+",
+        "value": 5,
+        "aspect": "takeCoinFromATargetPlayer"
+      }
+    ]
+  },
+  {
+    "type": "majorEstablishment",
+    "activation": [6],
+    "category": "majorEstablishment",
+    "name": "business center",
+    "img": "business-center.png",
+    "description": "if this is your turn, trade one non {majorEstablishment} establishment with another player",
+    "price": 8,
+    "initialStock": 4,
+    "effects": [
+      {
+        "operation": "-",
+        "value": 1,
+        "aspect": "swapCardWithTargetPlayer"
+      }
+    ]
+  }
+]

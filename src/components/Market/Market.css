@@ -1,0 +1,16 @@
+.market {
+  border-radius: 20px;
+  padding: 1%;
+}
+.cardList {
+  list-style-type: none;
+}
+.cardContainer {
+  display: inline-block;
+}
+.cardContainer img {
+  width: 100%;
+}
+.cardStackContainer {
+  margin-bottom: 4%;
+}

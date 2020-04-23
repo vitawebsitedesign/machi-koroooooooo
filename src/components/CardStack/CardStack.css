@@ -1,0 +1,8 @@
+.cardStack {
+  height: 160px;  /* same as individual card height */
+  position: relative;
+}
+.cardContainer {
+  position: absolute;
+  top: 0;
+}

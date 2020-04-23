@@ -1,0 +1,52 @@
+.container {
+  -webkit-animation-name: animateIn;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;    
+  animation-name: animateIn;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  
+  position: fixed;
+  top: 10%;
+  width: 100%;    
+}
+.splash {
+  background: rgba(255, 255, 255, 0.9);
+  border: 5px double white;
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 2;  
+  padding: 2% 4%;
+}
+.emoticon {
+  padding: 0 5%;
+}
+.button {
+  padding: 3% 0;
+}
+.firstFeedbackButton {
+  margin-top: 2%;
+}
+
+@-webkit-keyframes animateIn {
+  0% {
+    margin-top: -2%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animateIn {
+  0% {
+    margin-top: -2%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,12 @@
+.draggableContainer {
+	left: 50%;
+  position: absolute;
+	top: 5%;
+}
+.diceContainer {
+  transition: transform 1s ease-out 0s;
+}
+.dice2 {
+	margin-left: 30%;
+	margin-top: 20%;
+}

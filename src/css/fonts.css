@@ -1,0 +1,15 @@
+@font-face {
+  font-family: roboto;
+  font-weight: 100;
+  src: url(../fonts/roboto/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: roboto;
+  font-weight: normal;
+  src: url(../fonts/roboto/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: roboto;
+  font-weight: bold;
+  src: url(../fonts/roboto/OpenSans-Bold.ttf);
+}
